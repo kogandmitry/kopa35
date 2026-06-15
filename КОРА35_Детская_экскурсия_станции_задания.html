@@ -1,0 +1,249 @@
+<!-- КОРА 35 · Станции и задания · организаторам · v6 -->
+<meta charset="utf-8"><title>КОРА 35 — Станции (организаторам)</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap');
+:root{--green:#8CC63F;--gi:#5E8C1E;--yellow:#FFD200;--ink:#1A1A1A;--tint:#F4FAE9;--tinty:#FFFBE6}
+*{box-sizing:border-box}html,body{margin:0;padding:0;background:#d9d9d9;font-family:'Nunito',system-ui,sans-serif;color:var(--ink);font-size:13px;line-height:1.45}
+.page{width:210mm;min-height:297mm;background:#fff;margin:10px auto;padding:14mm 14mm 12mm;position:relative;overflow:hidden}
+.draft{position:absolute;top:0;left:0;right:0;background:var(--ink);color:#fff;text-align:center;padding:5px 10px;font-weight:800;letter-spacing:.05em;font-size:11px}.draft b{color:var(--yellow)}
+.header{margin-top:12px;margin-bottom:8px}
+.logo-line{display:flex;align-items:baseline;gap:12px}.logo-text{font-weight:900;font-size:36px;letter-spacing:.08em;color:var(--yellow)}.logo-sub{font-weight:800;font-size:16px;letter-spacing:.18em;color:var(--green)}
+.accent-line{width:100%;height:2px;background:var(--green);border-radius:2px;margin:6px 0 8px}
+.h-title{font-weight:900;font-size:22px;color:var(--ink);margin:0}.meta{font-size:11.5px;color:#666;margin-top:4px}
+.small{font-size:11px;color:#666;font-style:italic;margin:4px 0 0}
+h2.place{font-size:17px;font-weight:900;margin:18px 0 10px;display:flex;align-items:center;gap:10px}
+h2.place .pin{background:var(--green);color:#fff;font-size:11px;padding:3px 10px;border-radius:7px;letter-spacing:.04em;font-weight:800}
+h2.place::after{content:"";flex:1;height:2px;background:var(--yellow);border-radius:2px}
+h3.sec{font-size:16px;font-weight:900;margin:16px 0 8px}
+.block{border:2px solid #e8e8e8;border-radius:14px;padding:11px 13px;margin-bottom:10px;page-break-inside:avoid}
+.block .nm{font-weight:900;font-size:15px}
+.nbadge{background:var(--yellow);color:var(--ink);border:2px solid var(--ink);font-weight:900;font-size:12px;width:23px;height:23px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto}
+.block .show{font-size:12.2px;color:#333;margin:2px 0 5px}
+.lbl{font-weight:800;font-size:10.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--gi);margin:6px 0 3px}
+.tasks{margin:0;padding-left:17px}.tasks li{font-size:12px;margin-bottom:2px}
+.game{background:#eef7dd;border-left:4px solid var(--green);border-radius:7px;padding:5px 10px;font-size:12px;margin:6px 0 0}.game b{color:var(--gi)}
+.shoot{margin-top:6px;background:var(--tinty);border-radius:8px;padding:5px 9px;font-size:11.4px;display:flex;align-items:flex-start;gap:6px}.shoot b{color:#8a6d00;white-space:nowrap}
+.camsvg{width:18px;height:13px;flex:0 0 auto;margin-top:1px}
+table{width:100%;border-collapse:collapse;margin-bottom:6px;font-size:11.5px}
+th{background:var(--green);color:var(--ink);font-weight:800;text-align:left;padding:5px 7px;border:1px solid #cfcfcf}
+td{padding:4px 7px;border:1px solid #d9d9d9;vertical-align:top}td.t{font-weight:800;white-space:nowrap;background:#f8f8f8}
+.sublocs{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 4px}
+.subloc{background:#fff;border:1.5px solid var(--green);border-radius:10px;padding:6px 10px;flex:1 1 200px;min-width:175px}
+.subloc h5{font-size:12.5px;font-weight:800;margin:0 0 2px;color:var(--gi)}.subloc p{font-size:11.4px;margin:0;color:#333}
+.subloc .mini{font-size:11px;font-weight:700;color:var(--gi);margin-top:3px}
+.budget{border:2.5px solid var(--yellow);border-radius:16px;background:var(--tinty);padding:13px 15px;margin:6px 0 10px;page-break-inside:avoid}
+.budget h3{font-size:17px;font-weight:900;margin:0 0 4px}.budget .goal{font-size:12px;margin:0 0 8px}
+.bcols{display:flex;gap:16px;flex-wrap:wrap}
+.bcols .rules{flex:1 1 240px;min-width:230px}.bcols .rules ol{margin:0;padding-left:17px}.bcols .rules li{font-size:12px;margin-bottom:3px}
+.pieWrap{flex:1 1 240px;display:flex;gap:12px;align-items:center;min-width:240px}
+.legend{font-size:11.4px}.lg{display:flex;align-items:center;gap:6px;margin-bottom:3px}
+.lg .sw{width:13px;height:13px;border-radius:4px;border:1px solid #999;flex:0 0 auto}
+.lg.note{font-style:italic;color:#8a6d00;margin-top:5px;display:block}
+.prize{background:#fff;border:1.5px dashed #caa800;border-radius:8px;padding:5px 10px;font-size:11.5px;margin-top:8px}
+.finish{border:3px solid var(--yellow);border-radius:18px;background:var(--tinty);padding:13px 16px;margin-top:6px;page-break-inside:avoid}
+.finish h3{font-size:17px;font-weight:900;margin:0 0 2px}.finish p{margin:3px 0;font-size:12px}
+.progitem{display:flex;align-items:baseline;gap:8px;margin-bottom:3px;font-size:12px}.progitem b{color:var(--gi);white-space:nowrap}
+.variant{border:2px solid var(--green);border-radius:14px;background:var(--tint);padding:12px 14px;margin:14px 0;page-break-inside:avoid}
+.variant h3{font-size:16px;font-weight:900;color:var(--gi);margin:0 0 6px}
+.variant .arg{background:#fff;border-radius:8px;padding:6px 10px;font-size:12px;margin-top:8px}.variant .arg b{color:var(--gi)}
+.cols{column-count:2;column-gap:20px}.cols h4{font-size:13px;font-weight:800;color:var(--gi);margin:0 0 4px}
+.cols ul{margin:0 0 10px;padding-left:16px}.cols li{font-size:11.5px;margin-bottom:2px;break-inside:avoid}
+.foot{text-align:center;font-weight:700;font-size:10px;letter-spacing:.08em;color:#aaa;text-transform:uppercase;margin-top:12px;border-top:2px solid #eee;padding-top:6px}
+@media print{html,body{background:#fff}.page{margin:0;width:auto;min-height:auto;padding:12mm 12mm 10mm}@page{size:A4;margin:0}.draft{position:absolute}.block,table,.budget,.finish,.variant{page-break-inside:avoid}}
+</style>
+
+<!-- ============ PAGE 1 ============ -->
+<div class="page">
+  <div class="draft">ПРИМЕР ДОКУМЕНТА · <b>на доработку оргкомандой</b></div>
+  <div class="header">
+    <div class="logo-line"><span class="logo-text">КОРА</span><span class="logo-sub">35 лет</span></div>
+    <div class="accent-line"></div>
+    <div class="h-title">Станции, задания и тайминг дня</div>
+    <div class="meta">Детская экскурсия · среда, 24 июня 2026 · ИТП (ИнТехПласт) → завод КОРА (КИП МАСТЕР)<br>
+    30 детей · 2 группы по 15 · 2 сопровождающих на группу (один снимает)<br>
+    Координатор на ИТП — Нияз · куратор на КОРА — Кузьмич Д. · ПМ — Коган Д.Е. · ред. 15.06.2026</div>
+  </div>
+
+  <h3 class="sec">Вариант А · утро (основной)</h3>
+  <table>
+    <tr><th style="width:17%">Время</th><th style="width:7%">Мин</th><th>Этап</th><th style="width:22%">Кто ведёт</th></tr>
+    <tr><td class="t">09:00</td><td>—</td><td>Отъезд от «Эссен». Аудио-экскурсия по Н. Челнам и автопроизводству; автобус — продукция КОРА</td><td>Сопровождающие</td></tr>
+    <tr><td class="t">09:00–09:30</td><td>30</td><td>Переезд: перекличка, раздача путеводных листов, правила</td><td>Сопровождающие + ТБ</td></tr>
+    <tr><td class="t">09:30–09:40</td><td>10</td><td>ИТП: выгрузка, медицинские маски, инструктаж по ТБ</td><td>ТБ + Нияз</td></tr>
+    <tr><td class="t">09:40–10:15</td><td>35</td><td>Ротация: ① Роботы → ② Модели → ③ Что такое КОРА (≈11 мин)</td><td>Нияз + станции</td></tr>
+    <tr><td class="t">10:15–10:20</td><td>5</td><td>Сбор, посадка</td><td>Сопровождающие</td></tr>
+    <tr><td class="t">10:20–10:35</td><td>15</td><td>Переезд на КОРА (экскурсовод / аудио голосами сотрудников)</td><td>Экскурсовод</td></tr>
+    <tr><td class="t">10:35–10:45</td><td>10</td><td>Вход через вахту, распределение по группам</td><td>Кузьмич Д.</td></tr>
+    <tr><td class="t">10:45–11:00</td><td>15</td><td>④ Производство (ЦСП)</td><td>Станция ЦСП</td></tr>
+    <tr><td class="t">11:00–11:15</td><td>15</td><td>⑤ Сборка (ЦМО)</td><td>Станция ЦМО</td></tr>
+    <tr><td class="t">11:15–11:35</td><td>20</td><td>⑥ Офис (5 кабинетов × 3–4 мин)</td><td>Кузьмич Д. + кабинеты</td></tr>
+    <tr><td class="t">11:35–12:00</td><td>25</td><td>Финиш: конференцзал</td><td>Нияз / Кузьмич Д.</td></tr>
+    <tr><td class="t">12:00–13:00</td><td>60</td><td>Развоз по точкам</td><td>Сопровождающие</td></tr>
+  </table>
+
+  <div class="variant">
+    <h3>Вариант Б · обед (дети уезжают домой вместе с родителями)</h3>
+    <table>
+      <tr><th style="width:17%">Время</th><th style="width:7%">Мин</th><th>Этап</th><th style="width:22%">Кто ведёт</th></tr>
+      <tr><td class="t">13:00</td><td>—</td><td>Отъезд от «Эссен». Аудио-экскурсия в пути</td><td>Сопровождающие</td></tr>
+      <tr><td class="t">13:00–13:30</td><td>30</td><td>Переезд: перекличка, путеводные листы, правила</td><td>Сопровождающие + ТБ</td></tr>
+      <tr><td class="t">13:30–13:40</td><td>10</td><td>ИТП: медицинские маски, инструктаж</td><td>ТБ + Нияз</td></tr>
+      <tr><td class="t">13:40–14:15</td><td>35</td><td>Ротация: Роботы → Модели → Что такое КОРА</td><td>Нияз + станции</td></tr>
+      <tr><td class="t">14:15–14:30</td><td>15</td><td>Переезд на КОРА</td><td>Экскурсовод</td></tr>
+      <tr><td class="t">14:30–14:40</td><td>10</td><td>Вход, группы</td><td>Кузьмич Д.</td></tr>
+      <tr><td class="t">14:40–14:55</td><td>15</td><td>④ Производство (ЦСП)</td><td>Станция ЦСП</td></tr>
+      <tr><td class="t">14:55–15:10</td><td>15</td><td>⑤ Сборка (ЦМО)</td><td>Станция ЦМО</td></tr>
+      <tr><td class="t">15:10–15:30</td><td>20</td><td>⑥ Офис (5 кабинетов)</td><td>Кузьмич Д.</td></tr>
+      <tr><td class="t">15:30–15:55</td><td>25</td><td>Финиш: конференцзал</td><td>Нияз / Кузьмич Д.</td></tr>
+      <tr><td class="t">~16:00</td><td>—</td><td>Конец рабочего дня → дети уезжают домой с родителями на вахтовых автобусах</td><td>Родители</td></tr>
+    </table>
+    <div class="arg">
+      <b>Ключевой довод за вариант Б:</b> не нужен отдельный развоз — дети дожидаются родителей на заводе и уезжают домой вместе на вахтовых автобусах. Экономия ~10 000 ₽ на обратный рейс, снимается логистика «передать ребёнка по точкам», а главное — родитель встречает ребёнка прямо на своём рабочем месте: естественный эмоциональный финал.<br><br>
+      <b>Риски:</b> после обеда внимание детей ниже (6–8 лет) — станции держать короче; жара — вода на каждом переходе; подтвердить, что 24.06 — рабочий день и вахтовые ходят.
+    </div>
+  </div>
+  <div class="foot">КОРА · 35 лет · страница 1 из 3</div>
+</div>
+
+<!-- ============ PAGE 2 ============ -->
+<div class="page">
+  <h2 class="place"><span class="pin">Площадка 1</span> ИТП (ИнТехПласт)</h2>
+  <p class="small" style="margin-top:-6px;margin-bottom:10px">В пути от «Эссен» — аудио-экскурсия по Набережным Челнам и автопроизводству. Автобус, на котором едут дети, — продукция КОРА. На ИТП выдаются медицинские маски.</p>
+
+  <div class="block">
+    <div style="display:flex;align-items:center;gap:9px;margin-bottom:3px"><span class="nbadge">1</span><span class="nm">Роботы</span></div>
+    <p class="show">Роботизированная резка изделий из стеклопластика. Ребёнок под контролем оператора нажимает кнопку пуска.</p>
+    <div class="lbl">Интерактив</div>
+    <ul class="tasks">
+      <li>Нажми кнопку — запусти робота.</li>
+      <li>Посмотри, как робот режет деталь из стеклопластика.</li>
+    </ul>
+    <div class="shoot"><svg class="camsvg" viewBox="0 0 24 18"><rect x="1" y="3" width="14" height="12" rx="2.5" fill="#8a6d00"/><path d="M15 7 L22 3 V15 L15 11 Z" fill="#8a6d00"/><circle cx="6" cy="9" r="2.4" fill="#FFD200"/></svg><span><b>Оператору:</b> палец на кнопке + лицо; рез крупно; реакция группы.</span></div>
+  </div>
+
+  <div class="block">
+    <div style="display:flex;align-items:center;gap:9px;margin-bottom:3px"><span class="nbadge">2</span><span class="nm">Модели</span></div>
+    <p class="show">Мастерская моделистов, создание моделей и оснастки. 3D-принтер при детях печатает маленький самолётик.</p>
+    <div class="lbl">Интерактив</div>
+    <ul class="tasks">
+      <li>Зашкурь заготовку наждачкой до гладкого состояния.</li>
+      <li>Посмотри, как растёт самолётик в 3D-принтере слой за слоем.</li>
+      <li>Забери свой 3D-сувенир.</li>
+    </ul>
+    <div class="shoot"><svg class="camsvg" viewBox="0 0 24 18"><rect x="1" y="3" width="14" height="12" rx="2.5" fill="#8a6d00"/><path d="M15 7 L22 3 V15 L15 11 Z" fill="#8a6d00"/><circle cx="6" cy="9" r="2.4" fill="#FFD200"/></svg><span><b>Оператору:</b> ребёнок шкурит; самолётик растёт; момент «достал готовый».</span></div>
+  </div>
+
+  <div class="block">
+    <div style="display:flex;align-items:center;gap:9px;margin-bottom:3px"><span class="nbadge">3</span><span class="nm">Что такое КОРА</span></div>
+    <p class="show">Короткий ролик про ИТП и КОРА на телевизоре (кабинет директора). Резервная локация для варианта с 3 группами.</p>
+    <div class="lbl">Интерактив</div>
+    <ul class="tasks">
+      <li>Посмотри фильм — узнай, что делает завод.</li>
+    </ul>
+    <div class="shoot"><svg class="camsvg" viewBox="0 0 24 18"><rect x="1" y="3" width="14" height="12" rx="2.5" fill="#8a6d00"/><path d="M15 7 L22 3 V15 L15 11 Z" fill="#8a6d00"/><circle cx="6" cy="9" r="2.4" fill="#FFD200"/></svg><span><b>Оператору:</b> дети у экрана; реплики-впечатления.</span></div>
+  </div>
+
+  <h2 class="place"><span class="pin">Площадка 2</span> Завод КОРА (КИП МАСТЕР)</h2>
+
+  <div class="block">
+    <div style="display:flex;align-items:center;gap:9px;margin-bottom:3px"><span class="nbadge">4</span><span class="nm">Производство (ЦСП — резка металла)</span></div>
+    <p class="show">Из листа вырезают заготовку будущего значка ребёнка: «вот из этого получится твой значок».</p>
+    <div class="lbl">Интерактив</div>
+    <ul class="tasks">
+      <li>Посмотри, как из листа вырезают заготовку.</li>
+      <li>Получи свою заготовку в руки.</li>
+    </ul>
+    <div class="shoot"><svg class="camsvg" viewBox="0 0 24 18"><rect x="1" y="3" width="14" height="12" rx="2.5" fill="#8a6d00"/><path d="M15 7 L22 3 V15 L15 11 Z" fill="#8a6d00"/><circle cx="6" cy="9" r="2.4" fill="#FFD200"/></svg><span><b>Оператору:</b> момент реза; заготовка в руках ребёнка.</span></div>
+  </div>
+
+  <div class="block">
+    <div style="display:flex;align-items:center;gap:9px;margin-bottom:3px"><span class="nbadge">5</span><span class="nm">Сборка (ЦМО — лазерная гравировка)</span></div>
+    <p class="show">Лазер наносит логотип КОРА на металл — это сувенир, который ребёнок забирает домой.</p>
+    <div class="lbl">Интерактив</div>
+    <ul class="tasks">
+      <li>Посмотри, как лазер гравирует логотип.</li>
+      <li>Получи свой значок КОРА.</li>
+    </ul>
+    <div class="shoot"><svg class="camsvg" viewBox="0 0 24 18"><rect x="1" y="3" width="14" height="12" rx="2.5" fill="#8a6d00"/><path d="M15 7 L22 3 V15 L15 11 Z" fill="#8a6d00"/><circle cx="6" cy="9" r="2.4" fill="#FFD200"/></svg><span><b>Оператору:</b> луч за работой; готовый значок + лицо.</span></div>
+  </div>
+
+  <div class="foot">КОРА · 35 лет · страница 2 из 3</div>
+</div>
+
+<!-- ============ PAGE 3 ============ -->
+<div class="page">
+  <div class="block" style="min-height:auto">
+    <div style="display:flex;align-items:center;gap:9px;margin-bottom:3px"><span class="nbadge">6</span><span class="nm">Офис · 5 кабинетов (по 3–4 мин каждый)</span></div>
+    <p class="show">Маршрут по пяти кабинетам: дети видят цикл от идеи до отгрузки. Цель — ребёнок узнаёт, чем занимается его родственник.</p>
+    <div class="sublocs">
+      <div class="subloc">
+        <h5>Бухгалтерия / экономичка</h5>
+        <p>Кто считает деньги на заводе.</p>
+        <p class="mini">🎮 «Бюджет автобуса» — раздать монетки по статьям расходов, чтобы хватило на конфеты (схема ниже).</p>
+      </div>
+      <div class="subloc">
+        <h5>Админка / IT</h5>
+        <p>Кто чинит компьютеры и сеть.</p>
+      </div>
+      <div class="subloc">
+        <h5>Коммерческий (продажи · PR · логистика)</h5>
+        <p>Кто продаёт и доставляет продукцию.</p>
+      </div>
+      <div class="subloc">
+        <h5>Конструкторы</h5>
+        <p>Кто придумывает детали и чертит.</p>
+        <p class="mini">🎮 <b>«Автобус из нута»</b> — замоченный горох нута + зубочистки: за 2 мин собрать «новую модель автобуса». Заранее показать собранный пример-образец. Приз — лучшей модели.</p>
+      </div>
+      <div class="subloc">
+        <h5>Технологи</h5>
+        <p>Кто решает «как сделать» — подбирает станки, режимы, материалы.</p>
+        <p class="mini">🎮 <b>«Подбери инструмент»</b> — карточки-пары: инструмент/станок ↔ деталь. Дети уже видели на производстве: плазменную резку, лазерную гравировку, роботизированную резку стеклопластика, наждачку для моделей и оснастки. Плюс узнаваемые элементы автобуса: стекло, обшивка, каркас, сиденье, панель приборов.</p>
+      </div>
+    </div>
+    <div class="shoot"><svg class="camsvg" viewBox="0 0 24 18"><rect x="1" y="3" width="14" height="12" rx="2.5" fill="#8a6d00"/><path d="M15 7 L22 3 V15 L15 11 Z" fill="#8a6d00"/><circle cx="6" cy="9" r="2.4" fill="#FFD200"/></svg><span><b>Оператору:</b> момент, когда ребёнок узнаёт работу родственника; сборка автобуса из нута — крупно.</span></div>
+  </div>
+
+  <div class="budget">
+    <h3>🎮 «Бюджет автобуса» (бухгалтерия): хватит ли на конфеты?</h3>
+    <p class="goal"><b>Цель:</b> пробудить понимание ценности и трудоёмкости работы родителей. Самый большой сектор — труд рабочих.</p>
+    <div class="bcols">
+      <div class="rules">
+        <ol>
+          <li>Команда получает <b>20 монеток</b>.</li>
+          <li>Круг-«бюджет» из секторов-расходов с ценником.</li>
+          <li>Разложить: <b>труд — 7</b>, металл — 5, станки — 3, доставка — 2.</li>
+          <li>Верно → <b>3 монетки</b> на «Конфеты детям».</li>
+          <li>Ошиблись → круг не сходится: пробуем ещё.</li>
+        </ol>
+        <div class="prize"><b>Приз:</b> конфеты получают все; команда-победитель — печать «юный бухгалтер КОРА».</div>
+      </div>
+      <div class="pieWrap"><svg viewBox="0 0 260 270" width="200"><path d="M 130 130 L 130.0 28.0 A 102 102 0 0 1 212.5 190.0 Z" fill="#5E8C1E" stroke="#fff" stroke-width="2.5"/><text x="186.3" y="106.3" text-anchor="middle" font-family="'Nunito',sans-serif" font-weight="800" font-size="18" fill="#fff">7</text><path d="M 130 130 L 212.5 190.0 A 102 102 0 0 1 70.0 212.5 Z" fill="#8CC63F" stroke="#fff" stroke-width="2.5"/><text x="139.9" y="197.5" text-anchor="middle" font-family="'Nunito',sans-serif" font-weight="800" font-size="18" fill="#fff">5</text><path d="M 130 130 L 70.0 212.5 A 102 102 0 0 1 28.0 130.0 Z" fill="#A7ADB3" stroke="#fff" stroke-width="2.5"/><text x="73.7" y="163.7" text-anchor="middle" font-family="'Nunito',sans-serif" font-weight="800" font-size="18" fill="#fff">3</text><path d="M 130 130 L 28.0 130.0 A 102 102 0 0 1 47.5 70.0 Z" fill="#C9D8A0" stroke="#fff" stroke-width="2.5"/><text x="69.9" y="115.5" text-anchor="middle" font-family="'Nunito',sans-serif" font-weight="800" font-size="18" fill="#1A1A1A">2</text><path d="M 130 130 L 47.5 70.0 A 102 102 0 0 1 130.0 28.0 Z" fill="#FFD200" stroke="#fff" stroke-width="2.5"/><text x="101.3" y="78.7" text-anchor="middle" font-family="'Nunito',sans-serif" font-weight="800" font-size="18" fill="#1A1A1A">3</text><circle cx="130" cy="130" r="26" fill="#fff" stroke="#1A1A1A" stroke-width="2"/><text x="130" y="128" text-anchor="middle" font-family="'Nunito',sans-serif" font-weight="800" font-size="13" fill="#1A1A1A">20</text><text x="130" y="142" text-anchor="middle" font-family="'Nunito',sans-serif" font-weight="700" font-size="8" fill="#666">монет</text></svg><div class="legend"><div class="lg"><span class="sw" style="background:#5E8C1E"></span>Труд рабочих — <b>7</b></div><div class="lg"><span class="sw" style="background:#8CC63F"></span>Металл и детали — <b>5</b></div><div class="lg"><span class="sw" style="background:#A7ADB3"></span>Станки, электричество — <b>3</b></div><div class="lg"><span class="sw" style="background:#C9D8A0"></span>Доставка — <b>2</b></div><div class="lg"><span class="sw" style="background:#FFD200"></span>Конфеты детям — <b>3</b></div><div class="lg note">★ «Конфеты» появятся, только если всё посчитано верно.</div></div></div>
+    </div>
+  </div>
+
+  <div class="finish">
+    <h3>🏁 Финиш · конференцзал / переговорка</h3>
+    <div class="lbl">Программа (≈25 мин)</div>
+    <div class="progitem"><b>1. Перекус</b> — 5 мин.</div>
+    <div class="progitem"><b>2. Итоги</b> — 3 мин. Закрываем путеводные листы.</div>
+    <div class="progitem"><b>3. Видео о компании</b> — 5 мин.</div>
+    <div class="progitem"><b>4. Конкурс «КОРА глазами детей»</b> — 3 мин. Анонс: рисунки, поделки, видео; июль–август.</div>
+    <div class="progitem"><b>5. Сувениры</b> — 5 мин. 3D-самолётик + значок + сладкое.</div>
+    <div class="progitem"><b>6. Сайт</b> — 2 мин. QR/ссылка: фото, видео, оцифрованные творческие работы.</div>
+    <div class="progitem"><b>7. Общее фото</b> — 2 мин.</div>
+    <div class="shoot" style="margin-top:8px"><svg class="camsvg" viewBox="0 0 24 18"><rect x="1" y="3" width="14" height="12" rx="2.5" fill="#8a6d00"/><path d="M15 7 L22 3 V15 L15 11 Z" fill="#8a6d00"/><circle cx="6" cy="9" r="2.4" fill="#FFD200"/></svg><span><b>Оператору:</b> общий стол; лица с сувенирами; путеводные листы; групповое фото.</span></div>
+  </div>
+
+  <h3 class="sec">Роли · памятка · чек-лист</h3>
+  <div class="cols">
+    <h4>Роли</h4>
+    <ul><li>Нияз — ведущий, ИТП.</li><li>Кузьмич Д. — куратор, КОРА.</li><li>Сергей Борисович — зоны, станки ЦСП/ЦМО.</li><li>ТБ — инструктаж, медицинские маски (ИТП).</li><li>Сопровождающие — 2 на группу, один снимает.</li></ul>
+    <h4>Памятка сопровождающему</h4>
+    <ul><li>Знаешь группу поимённо; повязка цвета группы.</li><li>Станция ≤15 мин, держи ритм.</li><li>Вода/туалет — на переходах.</li><li>Медицинские маски на ИТП обязательны.</li><li>Ребёнок — только родителю (утро) / встречается с родителем на заводе (обед).</li></ul>
+    <h4>Оператору</h4>
+    <ul><li>Горизонтально, 10–20 сек.</li><li>Лица и «я сделал».</li><li>Главный кадр — узнавание работы родственника.</li><li>Конференцзал — обязательно.</li></ul>
+    <h4>Чек-лист «взять»</h4>
+    <ul><li>Путеводные листы + наклейки (+10%).</li><li>3D-самолётики и металлические значки.</li><li>20 монеток + поле-круг для «Бюджета».</li><li>Замоченный нут + зубочистки + образец автобуса.</li><li>Карточки-пары «инструмент ↔ деталь».</li><li>Медицинские маски (на ИТП).</li><li>Повязки, аптечка, вода, камеры.</li><li>Списки детей по группам.</li></ul>
+  </div>
+  <div class="foot">КОРА · 35 лет · страница 3 из 3</div>
+</div>
